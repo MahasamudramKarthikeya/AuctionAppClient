@@ -29,10 +29,10 @@ export const getProduct = (keyword="" , currentPage=1 , price = [0, 2500000] , c
         
 dispatch({ type:ALL_PRODUCT_REQUEST });
 // startingBid[gte]=400&startingBid[lt]=2000
-let link = `/products?keyword=${keyword}&page=${currentPage}&startingBid[gte]=${price[0]}&startingBid[lt]=${price[1]}`;
+let link = `https://server-po8i.onrender.com/products?keyword=${keyword}&page=${currentPage}&startingBid[gte]=${price[0]}&startingBid[lt]=${price[1]}`;
 
 if(category){
-    link = `/products?keyword=${keyword}&page=${currentPage}&startingBid[gte]=${price[0]}&startingBid[lt]=${price[1]}&category=${category}`;
+    link = `https://server-po8i.onrender.com/products?keyword=${keyword}&page=${currentPage}&startingBid[gte]=${price[0]}&startingBid[lt]=${price[1]}&category=${category}`;
 }
 
 const {data} = await axios.get(link);
