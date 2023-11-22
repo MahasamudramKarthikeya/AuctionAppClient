@@ -63,7 +63,7 @@ const {product , loading , error , sellerDetails ,  winStatus} = useSelector((st
 const userContact = async () => {
 
   try {
-    const res = await fetch('/getdata', {
+    const res = await fetch('https://server-po8i.onrender.com/getdata', {
       method: "GET",
       headers: {
         "Content-Type": "application/json"
@@ -134,7 +134,7 @@ const userContact = async () => {
         "Content-Type":"application/json"
       }
   
-      return fetch(`/payment`,{
+      return fetch(`https://server-po8i.onrender.com/payment`,{
         method:"POST",
         headers,
         body: JSON.stringify(body)
