@@ -40,7 +40,7 @@ const {state, dispatch} = useContext(UserContext);
 
     const { name, email, phone, password, cpassword } = user;
 
-    const res = await fetch("/register", {
+    const res = await fetch("https://server-po8i.onrender.com/register", {
       method: "POST",
       headers: {
         "Content-type": "application/json"
@@ -85,7 +85,7 @@ const loginUser =async (e) =>{
 // }
 
   e.preventDefault();
-  const res = await fetch('/signin' , {
+  const res = await fetch('https://server-po8i.onrender.com/signin' , {
     method: "POST",
     headers: {
       "Content-type": "application/json"
