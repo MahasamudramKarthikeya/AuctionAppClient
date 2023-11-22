@@ -25,7 +25,7 @@ const PlaceBid = ({product}) => {
 console.log(myForm);
         axios({
             method: "post",
-            url: "/products/bid",
+            url: "https://server-po8i.onrender.com/products/bid",
             data: myForm,
             headers: { "Content-Type":"application/json"},
           })
