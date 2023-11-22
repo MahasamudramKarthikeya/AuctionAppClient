@@ -33,7 +33,7 @@ const Profile = () => {
   const callProfilePage = async () => {
     
 try {
-  const res = await fetch('/about' ,{
+  const res = await fetch('https://server-po8i.onrender.com/about' ,{
     method: "GET",
     headers: {
       Accept: "application/json",
@@ -89,7 +89,7 @@ try {
   // console.log(`name is ${name}`);
 
 
-  const res = await fetch("/me/update", {
+  const res = await fetch("https://server-po8i.onrender.com/me/update", {
     method: "PUT",
     headers: {
       "Content-type": "application/json"
@@ -133,7 +133,7 @@ const passwordChangeFun = async () => {
   // console.log(`name is ${name}`);
 
 
-  const res = await fetch("/password/update", {
+  const res = await fetch("https://server-po8i.onrender.com/password/update", {
     method: "PUT",
     headers: {
       "Content-type": "application/json"
