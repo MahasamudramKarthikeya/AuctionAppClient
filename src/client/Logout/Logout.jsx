@@ -15,7 +15,7 @@ const Logout = () => {
 const history = useHistory();
 
 useEffect(() => {
-  fetch('/logout' , {
+  fetch('https://server-po8i.onrender.com/logout' , {
 
     method: "GET",
     headers: {
